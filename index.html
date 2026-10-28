@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://alis.live/m/">
+  <title>ALIS MOBILE</title>
+  <script>
+    const destination = new URL('https://alis.live/m/');
+    destination.search = location.search;
+    destination.hash = location.hash;
+    location.replace(destination.href);
+  </script>
+  <noscript><meta http-equiv="refresh" content="0;url=https://alis.live/m/"></noscript>
+</head>
+<body>
+  <p><a id="destination" href="https://alis.live/m/">Открыть мобильную версию ALIS</a></p>
+  <script>document.getElementById('destination').href = destination.href;</script>
+</body>
+</html>
